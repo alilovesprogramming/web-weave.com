@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+    background: url('kfdjshfdofu0sfhsdfhoidshfsfhdshf.jpg');
+}
+.resumesec {
+    background: url('your-background-image.jpg') center/cover; /* Add your background image */
+    padding: 80px; /* Adjust padding as needed */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+.boxmain {
+    max-width: 800px; /* Set max width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.534); /* Set the background color with some transparency */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    padding: 30px; /* Adjust padding as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.74); /* Add box shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally inside the box */
+}
+
+.img {
+    width: 100%; /* Ensure the image takes the full width inside the box */
+    max-width: 400px; /* Set max width for the image */
+}
+
+.img img {
+    width: 39%; /* Ensure the image takes the full width inside the container */
+    max-width: 100%; /* Ensure the image is responsive */
+    border-radius: 8px; /* Add border-radius for image */
+    margin-bottom: 45px; /* Adjust margin as needed */
+    position: relative;
+    left: 0px;
+    cursor: pointer;
+}
+
+/* Existing styles below */
+
+.box p{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.box p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    background: linear-gradient(to right, #4a90e2, #8a2be2); /* Gradient colors */
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 5px; /* Adjust padding as needed */
+}
+
+
+
+
+.animated {
+    animation-duration: 1ms; /* Adjust the animation duration as needed */
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

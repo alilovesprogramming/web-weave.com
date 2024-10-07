@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background: url('kfdjshfdofu0sfhsdfhoidshfsfhdshf.jpg') center/cover;
+    color: #ffffff;
+}
+
+.mainbox {
+    display: flex;
+    max-width: 1395px;
+    margin: 0 auto;
+    padding: 191px;
+}
+
+.firsthalf,
+.secondhalf {
+    flex: 1;
+}
+
+.text-big {
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+.text-small {
+    font-size: 1.7rem;
+    
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 255px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.secleft,
+.secright {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.paras {
+    max-width: 600px;
+    border: 2px solid #ffffff;
+    padding: 47px 59px;
+    background-color: rgba(18, 18, 18, 0.73);
+    border-radius: 22px;
+}
+
+.sectiontagg {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+.sectiontagg::before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1.7px;
+    background: linear-gradient(to right, #4a90e2, #8a2be2); /* Gradient colors */
+    transition: width 0.3s ease-in-out;
+}
+.sectiontagg{
+    position: relative;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+.sectiontagg:hover::before{
+    width: 100%;
+}
+.sectionsubtag {
+    font-size: 1rem;
+}
+
+.thumbnail {
+    max-width: 400px;
+}
+
+.toog {
+    border: 2px solid rgb(54 54 177);
+    background-color: rgb(54 54 177);
+    padding: 2px 10px;
+    border-radius: 8px;
+    display: flex;
+    left: -72px;
+    position: relative;
+    top: 41px;
+    color: white;
+}
+
+.sectiontagg img.toog {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.toog:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.sectionsubtag {
+    font-size: 1.2rem;
+    padding: 2px 2px;
+}
+
+.ribbon {
+    position: relative;
+    top: -59px;
+    left: 3%;
+    padding: 6px 30px;
+    margin: 1px 148px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.subheading {
+    font-size: 1.7rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.strength-words {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffcc00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.para{
+    padding: 77px 37px;
+}
+
+.strength-words::before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1.7px;
+    background: linear-gradient(to right, #4a90e2, #8a2be2); /* Gradient colors */
+    transition: width 0.3s ease-in-out;
+}
+
+.strength-words:hover:before {
+    width: 100%;
+}
+.strength-words{
+    position: relative;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+.strength-words:hover{
+    cursor: text ;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vh; /* Adjust the height as needed */
+}
+
+.heading {
+    text-align: center;
+}
+
+.h1 {
+    font-size: 5rem; /* Adjust the font size as needed */
+    animation: colorAnimation 5s infinite; /* Color animation with a duration of 5 seconds and infinite loop */
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: #725cec; /* Starting color */
+    }
+    25% {
+        color: #ffeb33; /* Midway color */
+    }
+    50% {
+        color: #02f8bb; /* Midway color */
+    }
+    75% {
+        color: #377294; /* Midway color */
+    }
+    100% {
+        color: #3358ff; /* Ending color */
+    }
+}
+
+/* Add this style for animated lines */
+.heading {
+    position: relative;
+}
+
+.h1::before,
+.h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff5733, #33ff57); /* Adjust gradient colors as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: lineAnimation 5s infinite; /* Line animation with a duration of 5 seconds and infinite loop */
+}
+
+.h1::before {
+    left: -100%;
+}
+
+.h1::after {
+    right: -100%;
+}
+
+@keyframes lineAnimation {
+    0%, 100% {
+        width: 0;
+    }
+    25%, 75% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+}

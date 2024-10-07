@@ -1,0 +1,160 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('kfdjshfdofu0sfhsdfhoidshfsfhdshf.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 107px;
+    background-color: rgb(28 28 28 / 80%); /* Transparent white background */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation properties */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Change color on hover */
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+a:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1.7px;
+    background: linear-gradient(to right, #4a90e2, #8a2be2); /* Gradient colors */
+    transition: width 0.3s ease-in-out;
+}
+a:hover {
+    color: rgb(90, 212, 243);
+    text-decoration: none;
+}
+a:hover:before {
+    width: 100%;
+}
+a:hover {
+    color: rgb(90, 212, 243);
+    
+    transition: color 0.3s ease-in-out;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Adjust the height as needed */
+}
+
+.heading {
+    text-align: center;
+}
+
+.h11 {
+    font-size: 5rem; /* Adjust the font size as needed */
+    animation: colorAnimation 5s infinite; /* Color animation with a duration of 5 seconds and infinite loop */
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: #725cec; /* Starting color */
+    }
+    25% {
+        color: #ffeb33; /* Midway color */
+    }
+    50% {
+        color: #02f8bb; /* Midway color */
+    }
+    75% {
+        color: #377294; /* Midway color */
+    }
+    100% {
+        color: #3358ff; /* Ending color */
+    }
+}
+
+/* Add this style for animated lines */
+.heading {
+    position: relative;
+}
+
+.h11::before,
+.h11::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff5733, #33ff57); /* Adjust gradient colors as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: lineAnimation 5s infinite; /* Line animation with a duration of 5 seconds and infinite loop */
+}
+
+.h11::before {
+    left: -100%;
+}
+
+.h11::after {
+    right: -100%;
+}
+
+@keyframes lineAnimation {
+    0%, 100% {
+        width: 0;
+    }
+    25%, 75% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+}
